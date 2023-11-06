@@ -20,7 +20,7 @@ Here's an example of creating an ice cream with the Builder pattern:
 from ice_cream import Icecream, Basic, Vanilla, AIceCream
 
 # Create an ice cream with base price 10
-icecream = Icecream(AIceCream())
+icecream = Icecream(10)
 
 # Add toppings
 icecream.add_topping(Basic())
