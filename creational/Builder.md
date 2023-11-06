@@ -30,3 +30,12 @@ icecream.add_topping(Vanilla())
 final_price = icecream.cal_final_price()
 
 print(f"The final price of the ice cream is {final_price}.")
+```
+
+## Questions
+
+  1 Why don't we have a Director class in this implementation?
+
+    -> In this specific implementation, there is no separate "Director" class because the process of constructing the Icecream object is straightforward. The Icecream class itself acts as the "Director" by allowing the client to add toppings to the ice cream using the add_topping method.
+
+    By directly interacting with the Icecream class, the client has control over the construction process and can add toppings as desired. This approach simplifies the code and eliminates the need for a separate Director class.
