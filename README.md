@@ -18,6 +18,33 @@ In the Builder pattern, a builder class is responsible for constructing the obje
 
 To explain the Builder pattern, the example of creating custom ice creams with various toppings is used. This example demonstrates how the Builder pattern allows the creation of complex objects (ice creams) step by step, by adding different toppings. The flexibility of choosing toppings and the ability to create custom ice cream combinations highlight the benefits of the Builder pattern.
 
+
+# Singleton Design Pattern
+
+**Date: 7 Nov 2023**
+
+The Singleton design pattern is a creational design pattern that ensures a class has only one instance and provides a global point of access to that instance. It is used when exactly one object is needed to coordinate actions across the system. This single instance is shared and used throughout the application, providing a common point of interaction for different components.
+
+## Key Characteristics
+
+1. **Single Instance**: The Singleton pattern ensures that a class has only one instance, which is created lazily upon first access and shared across the application.
+
+2. **Global Access**: The single instance is globally accessible, allowing other objects to access it without creating their own instances.
+    e.g singalton DB connection 
+
+3. **Lazy Initialization**: The instance is created when it is first requested, not at the time the class is loaded.
+
+4. **Thread Safety**: Implementations must be thread-safe to prevent multiple threads from creating duplicate instances.
+
+5. **Private Constructor**: The Singleton class typically has a private constructor to prevent direct instantiation.
+
+6. **Global Point of Control**: It provides a centralized point of control for managing a shared resource or coordinating actions.
+
+## Use Cases
+
+The Singleton pattern is
+
+
 ## Structural Design Patterns
 
 ...
