@@ -100,6 +100,46 @@ To effectively implement the Factory pattern:
 The Factory pattern is a valuable tool for creating objects in a flexible and extensible manner, providing a clean separation between client code and the details of object creation.
 
 
+# Prototype Design Pattern
+
+**Date: 14 Nov 2023**
+
+The Prototype design pattern is a creational pattern that focuses on creating objects by cloning an existing instance, known as the prototype, rather than creating new objects using constructors. It enables the creation of new objects by copying an existing object, promoting flexibility and reducing the need for subclassing.
+
+## Key Characteristics
+
+1. **Prototype Object**: The pattern involves defining a prototype object, which serves as the template for creating new objects. These objects are cloned to produce new instances.
+
+2. **Cloning Mechanism**: Object creation occurs by cloning the prototype object, which reduces the need for explicit constructors and subclassing. The `clone()` method is used to create new instances.
+
+3. **Reduced Subclassing**: Instead of creating new objects through subclassing, the Prototype pattern utilizes cloning to produce new instances with desired initial states.
+
+4. **Dynamic Object Creation**: It allows dynamic object creation at runtime, enabling the creation of complex objects more efficiently.
+
+5. **Deep Copy vs. Shallow Copy**: Depending on the requirement, the prototype can be cloned as a shallow copy (copying references) or a deep copy (copying object contents), maintaining object integrity.
+
+## Use Cases
+
+The Prototype pattern is beneficial in scenarios where:
+
+- Creating new objects by copying an existing object's state is more efficient than using constructors.
+- Avoiding the creation of subclasses for different object configurations or states is preferred.
+- Objects need to be dynamically created based on runtime conditions.
+
+## Best Practices
+
+To effectively implement the Prototype pattern:
+
+- Ensure the prototype object implements a `clone()` method to create copies of itself.
+- Use appropriate copying mechanisms (shallow or deep) based on the object's complexity and requirements.
+- Implement a clear interface for prototype objects to provide a consistent way of cloning.
+- Utilize the Prototype pattern to avoid unnecessary subclassing for object creation variations.
+
+The Prototype pattern provides a flexible way to create objects by copying existing instances, offering advantages in scenarios where object creation involves complex configurations or dynamic runtime requirements.
+
+This pattern simplifies object creation and promotes code reusability by eliminating the need for multiple constructors or subclassing variations.
+
+
 ## Structural Design Patterns
 
 ...
