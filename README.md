@@ -19,6 +19,13 @@ In the Builder pattern, a builder class is responsible for constructing the obje
 To explain the Builder pattern, the example of creating custom ice creams with various toppings is used. This example demonstrates how the Builder pattern allows the creation of complex objects (ice creams) step by step, by adding different toppings. The flexibility of choosing toppings and the ability to create custom ice cream combinations highlight the benefits of the Builder pattern.
 
 
+**Date: 21 Nov 2023** 
+
+#### An example from real-world codebase
+
+https://github.com/dbader/schedule/blob/master/schedule/__init__.py#L208 
+check how the library is using the builder pattern to build a Job object
+
 # Singleton Design Pattern
 
 **Date: 7 Nov 2023**
