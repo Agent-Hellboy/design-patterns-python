@@ -24,6 +24,8 @@ To explain the Builder pattern, the example of creating custom ice creams with v
 #### An example from real-world codebase
 
 https://github.com/dbader/schedule/blob/master/schedule/__init__.py#L208 
+
+
 check how the library is using the builder pattern to build a Job object
 
 # Singleton Design Pattern
